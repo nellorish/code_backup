@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: gaige_person
+    columns:
+      - name: sourceidentifier
+        description: "primary key"
+        tests:
+          - unique
+          - not_null
+        tags:
+          - primary_key
+  - name: gaige_patient
+    columns:
+      - name: sourceidentifier
+        description: "primary key"
+        tests:
+          - unique
+          - not_null
+        tags:
+          - primary_key
